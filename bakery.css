@@ -1,0 +1,273 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf7;
+            color: #49332f;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 1px solid #f1ded9;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 28px;
+            font-weight: bold;
+            color: #a64d64;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #49332f;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #c45e78;
+        }
+
+        /* Home Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 35px;
+            padding: 65px 8%;
+            background: linear-gradient(120deg, #fce8e8, #fff4e9);
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .tag {
+            color: #a64d64;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(38px, 5vw, 58px);
+            line-height: 1.2;
+            margin: 18px 0;
+        }
+
+        .hero h1 span {
+            color: #bd6378;
+        }
+
+        .hero p {
+            color: #765f58;
+            max-width: 450px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #a64d64;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #82394e;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 120px 120px 12px 12px;
+        }
+
+        /* Menu Section */
+        .section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        .section-desc {
+            color: #866d65;
+            margin-bottom: 35px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 12px 12px 20px;
+            border: 1px solid #f1e3df;
+            border-radius: 10px;
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px #6e3b3015;
+        }
+
+        .card img {
+            width: 100%;
+            height: 185px;
+            object-fit: cover;
+            border-radius: 7px;
+        }
+
+        .card h3 {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            margin: 12px 5px 3px;
+        }
+
+        .card p {
+            font-size: 13px;
+            color: #806c64;
+            margin: 0 5px;
+        }
+
+        .card-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 5px 0;
+        }
+
+        .price {
+            color: #a64d64;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .order-btn {
+            display: inline-block;
+            background-color: #f8e6e8;
+            color: #913e55;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .order-btn:hover {
+            background-color: #f1cdd4;
+        }
+
+        /* Offer Section */
+        .offer {
+            background-color: #f6e1dc;
+            padding: 45px 8%;
+            text-align: center;
+        }
+
+        .offer h2 {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            margin: 10px 0;
+        }
+
+        .offer p {
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 55px 8%;
+            background-color: white;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 650px;
+            margin: 15px auto 0;
+            color: #806c64;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #49332f;
+            color: #fff5ef;
+            padding: 30px 8%;
+            text-align: center;
+        }
+
+        footer p {
+            color: #e9d4cd;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        /* Mobile Design */
+        @media (max-width: 650px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero {
+                text-align: center;
+                padding: 45px 6%;
+            }
+
+            .hero p {
+                margin: 0 auto 25px;
+            }
+
+            .hero-image img {
+                height: 260px;
+            }
+
+            .section {
+                padding: 45px 5%;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+        }
+   
